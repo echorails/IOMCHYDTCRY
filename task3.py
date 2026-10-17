@@ -18,5 +18,5 @@ def HOK():
     gcd = math.gcd(x,y)
     lcm = (x * y) // gcd
     return str(lcm), 200, {"Content-Type": "text/plain"}
-app.run()
+app.run(host="0.0.0.0", port=5000)
 
